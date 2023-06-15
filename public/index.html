@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form onsubmit="handleSearch(event)">
+          <input type="search" name="search" class="search" />
+          <button class="search_btn">Search</button>
+        </form>
+      </header>
+      <div class="bookmarks_container">
+        <template class="heading_template" hidden>
+          <h3 class="bookmark_heading"></h3>
+        </template>
+        <template class="results_template">
+          <div class="bookmark_results"></div>
+        </template>
+        <template class="bookmark_template" hidden>
+          <div class="bookmark">
+            <a class="title" href="#" target="_blank">
+              <img src="" class="thumbnail_img"/>
+              <div class="title_heading"></div>
+              <div class="title_text"></div>
+            </a>
+          </div>
+        </template>
+        <!-- ------------------------------------------------- -->
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
